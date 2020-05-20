@@ -20,7 +20,6 @@ export const makeConfig = (config: webpack.Configuration) => merge({
 
   resolve: {
     extensions: [`.js`, `.ts`, `.tsx`, `.json`],
-    mainFields: [`main`],
     plugins: [PnpWebpackPlugin],
   },
 
