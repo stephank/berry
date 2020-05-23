@@ -9,6 +9,7 @@ import fs                                                                  from 
 import path                                                                from 'path';
 import TerserPlugin                                                        from 'terser-webpack-plugin';
 import {promisify}                                                         from 'util';
+import {BundleAnalyzerPlugin}                                              from "webpack-bundle-analyzer";
 import webpack                                                             from 'webpack';
 
 import {findPlugins}                                                       from '../../tools/findPlugins';
@@ -42,6 +43,9 @@ export default class BuildBundleCommand extends Command {
 
   @Command.Boolean(`--no-minify`)
   noMinify: boolean = false;
+
+  @Command.Boolean(`--dev`)
+  dev: boolean = false;
 
   static usage: Usage = Command.Usage({
     description: `build the local bundle`,
@@ -87,9 +91,7 @@ export default class BuildBundleCommand extends Command {
 
           bail: true,
 
-          ...!this.noMinify && {
-            mode: `production`,
-          },
+          mode: this.dev ? `development` : !this.noMinify ? `production` : `none`,
 
           ...!this.noMinify && {
             optimization: {
@@ -128,6 +130,7 @@ export default class BuildBundleCommand extends Command {
             }],
           },
 
+          // @ts-ignore
           plugins: [
             new webpack.BannerPlugin({
               entryOnly: true,
@@ -144,7 +147,9 @@ export default class BuildBundleCommand extends Command {
                 report.reportInfoOnce(MessageName.UNNAMED, `${prettyWebpack}: ${message}`);
               }
             }),
-          ],
+
+            this.dev && new BundleAnalyzerPlugin({analyzerMode:`static`}),
+          ].filter(x => !!x),
         }));
 
         buildErrors = await new Promise<string | null>((resolve, reject) => {
