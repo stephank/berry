@@ -91,7 +91,7 @@ export default class BuildBundleCommand extends Command {
 
           bail: true,
 
-          mode: this.dev ? `development` : !this.noMinify ? `production` : `none`,
+          mode: `production`,
 
           ...!this.noMinify && {
             optimization: {
