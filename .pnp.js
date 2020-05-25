@@ -7306,6 +7306,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["@types/webpack-bundle-analyzer", [
+        ["npm:3.8.0", {
+          "packageLocation": "./.yarn/cache/@types-webpack-bundle-analyzer-npm-3.8.0-dd5a0dc191-9670403a42.zip/node_modules/@types/webpack-bundle-analyzer/",
+          "packageDependencies": [
+            ["@types/webpack-bundle-analyzer", "npm:3.8.0"],
+            ["@types/webpack", "npm:4.32.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["@types/webpack-merge", [
         ["npm:4.1.5", {
           "packageLocation": "./.yarn/cache/@types-webpack-merge-npm-4.1.5-2d7748bcf3-2988bb97d7.zip/node_modules/@types/webpack-merge/",
@@ -7952,6 +7962,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/filesize", "npm:4.1.0"],
             ["@types/terser-webpack-plugin", "npm:1.2.1"],
             ["@types/webpack", "npm:4.32.1"],
+            ["@types/webpack-bundle-analyzer", "npm:3.8.0"],
             ["@types/webpack-merge", "npm:4.1.5"],
             ["@types/webpack-sources", "npm:0.1.5"],
             ["@yarnpkg/cli", "virtual:e04a2594c769771b96db34e7a92a8a3af1c98ae86dce662589a5c5d5209e16875506f8cb5f4c2230a2b2ae06335b14466352c4ed470d39edf9edb6c515984525#workspace:packages/yarnpkg-cli"],
@@ -7972,6 +7983,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["typescript", "patch:typescript@npm%3A3.8.3#builtin<compat/typescript>::version=3.8.3&hash=0ea415"],
             ["val-loader", "virtual:e04a2594c769771b96db34e7a92a8a3af1c98ae86dce662589a5c5d5209e16875506f8cb5f4c2230a2b2ae06335b14466352c4ed470d39edf9edb6c515984525#npm:1.1.1"],
             ["webpack", "npm:4.41.2"],
+            ["webpack-bundle-analyzer", "npm:3.8.0"],
             ["webpack-merge", "npm:4.2.1"],
             ["webpack-sources", "npm:1.3.0"]
           ],
@@ -7990,6 +8002,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/filesize", "npm:4.1.0"],
             ["@types/terser-webpack-plugin", "npm:1.2.1"],
             ["@types/webpack", "npm:4.32.1"],
+            ["@types/webpack-bundle-analyzer", "npm:3.8.0"],
             ["@types/webpack-merge", "npm:4.1.5"],
             ["@types/webpack-sources", "npm:0.1.5"],
             ["@yarnpkg/cli", "virtual:e04a2594c769771b96db34e7a92a8a3af1c98ae86dce662589a5c5d5209e16875506f8cb5f4c2230a2b2ae06335b14466352c4ed470d39edf9edb6c515984525#workspace:packages/yarnpkg-cli"],
@@ -8009,6 +8022,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["tslib", "npm:1.13.0"],
             ["val-loader", "virtual:e04a2594c769771b96db34e7a92a8a3af1c98ae86dce662589a5c5d5209e16875506f8cb5f4c2230a2b2ae06335b14466352c4ed470d39edf9edb6c515984525#npm:1.1.1"],
             ["webpack", "npm:4.41.2"],
+            ["webpack-bundle-analyzer", "npm:3.8.0"],
             ["webpack-merge", "npm:4.2.1"],
             ["webpack-sources", "npm:1.3.0"]
           ],
@@ -9509,6 +9523,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/acorn-walk-npm-6.1.1-19617886f4-8dade39895.zip/node_modules/acorn-walk/",
           "packageDependencies": [
             ["acorn-walk", "npm:6.1.1"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:7.1.1", {
+          "packageLocation": "./.yarn/cache/acorn-walk-npm-7.1.1-492300a130-7d465101e6.zip/node_modules/acorn-walk/",
+          "packageDependencies": [
+            ["acorn-walk", "npm:7.1.1"]
           ],
           "linkType": "HARD",
         }]
@@ -11194,6 +11215,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["bfj", [
+        ["npm:6.1.2", {
+          "packageLocation": "./.yarn/cache/bfj-npm-6.1.2-1b2ce5df1c-ba7bc1649c.zip/node_modules/bfj/",
+          "packageDependencies": [
+            ["bfj", "npm:6.1.2"],
+            ["bluebird", "npm:3.5.5"],
+            ["check-types", "npm:8.0.3"],
+            ["hoopy", "npm:0.1.4"],
+            ["tryer", "npm:1.0.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["big.js", [
         ["npm:5.2.2", {
           "packageLocation": "./.yarn/cache/big.js-npm-5.2.2-e147c30820-ea33d7d256.zip/node_modules/big.js/",
@@ -12252,6 +12286,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["check-types", [
+        ["npm:8.0.3", {
+          "packageLocation": "./.yarn/cache/check-types-npm-8.0.3-935499d8f5-88b16cd319.zip/node_modules/check-types/",
+          "packageDependencies": [
+            ["check-types", "npm:8.0.3"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["cheerio", [
         ["npm:1.0.0-rc.2", {
           "packageLocation": "./.yarn/cache/cheerio-npm-1.0.0-rc.2-6e3938508e-81d4a35ba8.zip/node_modules/cheerio/",
@@ -12830,6 +12873,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/commander-npm-2.20.0-ab2e95a4a0-f58e7e2a01.zip/node_modules/commander/",
           "packageDependencies": [
             ["commander", "npm:2.20.0"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:2.20.3", {
+          "packageLocation": "./.yarn/cache/commander-npm-2.20.3-d8dcbaa39b-b73428e97d.zip/node_modules/commander/",
+          "packageDependencies": [
+            ["commander", "npm:2.20.3"]
           ],
           "linkType": "HARD",
         }],
@@ -14841,6 +14891,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/ee-first-npm-1.1.1-33f8535b39-ba74f91398.zip/node_modules/ee-first/",
           "packageDependencies": [
             ["ee-first", "npm:1.1.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["ejs", [
+        ["npm:2.7.4", {
+          "packageLocation": "./.yarn/unplugged/ejs-npm-2.7.4-879ed38a4e/node_modules/ejs/",
+          "packageDependencies": [
+            ["ejs", "npm:2.7.4"]
           ],
           "linkType": "HARD",
         }]
@@ -19035,6 +19094,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["homedir-polyfill", "npm:1.0.1"],
             ["parse-passwd", "npm:1.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["hoopy", [
+        ["npm:0.1.4", {
+          "packageLocation": "./.yarn/cache/hoopy-npm-0.1.4-32e7a5b08e-29b8c7e502.zip/node_modules/hoopy/",
+          "packageDependencies": [
+            ["hoopy", "npm:0.1.4"]
           ],
           "linkType": "HARD",
         }]
@@ -25086,6 +25154,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["open", "npm:6.4.0"],
             ["is-wsl", "npm:1.1.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["opener", [
+        ["npm:1.5.1", {
+          "packageLocation": "./.yarn/cache/opener-npm-1.5.1-b1b882b121-055a1efdc2.zip/node_modules/opener/",
+          "packageDependencies": [
+            ["opener", "npm:1.5.1"]
           ],
           "linkType": "HARD",
         }]
@@ -31983,6 +32060,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["tryer", [
+        ["npm:1.0.1", {
+          "packageLocation": "./.yarn/cache/tryer-npm-1.0.1-f48ab9ec32-0d0fa95e8a.zip/node_modules/tryer/",
+          "packageDependencies": [
+            ["tryer", "npm:1.0.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["ts-loader", [
         ["virtual:5d170a96e3bd35439131aba7820e7b850e9381656d638624d34e228d96fc2f134ebf73b7eb6235db8cb822a7bcd252e04750d4dfcaeb49408c4e561390950138#npm:6.2.1", {
           "packageLocation": "./.yarn/$$virtual/ts-loader-virtual-378be68cab/0/cache/ts-loader-npm-6.2.1-268838f7fa-4c25aabad0.zip/node_modules/ts-loader/",
@@ -33532,6 +33618,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["terser-webpack-plugin", "virtual:08435541f660de9942863a48ec21727f2edc5741c898fb7e12faeed34463d8aeed665de4e2086dc4d266cd94e7137262390970792dcb4ea33dd5a35068b02d38#npm:1.4.3"],
             ["watchpack", "npm:1.6.0"],
             ["webpack-sources", "npm:1.4.3"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["webpack-bundle-analyzer", [
+        ["npm:3.8.0", {
+          "packageLocation": "./.yarn/cache/webpack-bundle-analyzer-npm-3.8.0-65cccc1fa9-9ebe98aa5e.zip/node_modules/webpack-bundle-analyzer/",
+          "packageDependencies": [
+            ["webpack-bundle-analyzer", "npm:3.8.0"],
+            ["acorn", "npm:7.1.1"],
+            ["acorn-walk", "npm:7.1.1"],
+            ["bfj", "npm:6.1.2"],
+            ["chalk", "npm:2.4.2"],
+            ["commander", "npm:2.20.3"],
+            ["ejs", "npm:2.7.4"],
+            ["express", "npm:4.17.1"],
+            ["filesize", "npm:3.6.1"],
+            ["gzip-size", "npm:5.1.1"],
+            ["lodash", "npm:4.17.15"],
+            ["mkdirp", "npm:0.5.1"],
+            ["opener", "npm:1.5.1"],
+            ["ws", "npm:6.2.1"]
           ],
           "linkType": "HARD",
         }]
