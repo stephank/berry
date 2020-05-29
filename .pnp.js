@@ -8471,7 +8471,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@yarnpkg/core", "workspace:packages/yarnpkg-core"],
             ["@yarnpkg/fslib", "workspace:packages/yarnpkg-fslib"],
             ["clipanion", "npm:2.4.0"],
-            ["inquirer", "npm:6.2.1"],
+            ["inquirer", "patch:inquirer@npm%3A7.1.0#./.yarn/patches/inquirer.patch::version=7.1.0&hash=75c2f9&locator=%40yarnpkg%2Fmonorepo%40workspace%3A."],
             ["lodash", "npm:4.17.15"],
             ["node-emoji", "npm:1.8.1"],
             ["tau-prolog", "npm:0.2.66"],
@@ -8545,7 +8545,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@yarnpkg/json-proxy", "workspace:packages/yarnpkg-json-proxy"],
             ["@yarnpkg/parsers", "workspace:packages/yarnpkg-parsers"],
             ["clipanion", "npm:2.4.0"],
-            ["inquirer", "npm:6.2.1"],
+            ["inquirer", "patch:inquirer@npm%3A7.1.0#./.yarn/patches/inquirer.patch::version=7.1.0&hash=75c2f9&locator=%40yarnpkg%2Fmonorepo%40workspace%3A."],
             ["lodash", "npm:4.17.15"],
             ["semver", "npm:7.1.2"],
             ["treeify", "npm:1.1.0"],
@@ -8572,7 +8572,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@yarnpkg/json-proxy", "workspace:packages/yarnpkg-json-proxy"],
             ["@yarnpkg/parsers", "workspace:packages/yarnpkg-parsers"],
             ["clipanion", "npm:2.4.0"],
-            ["inquirer", "npm:6.2.1"],
+            ["inquirer", "patch:inquirer@npm%3A7.1.0#./.yarn/patches/inquirer.patch::version=7.1.0&hash=75c2f9&locator=%40yarnpkg%2Fmonorepo%40workspace%3A."],
             ["lodash", "npm:4.17.15"],
             ["semver", "npm:7.1.2"],
             ["treeify", "npm:1.1.0"],
@@ -8599,7 +8599,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@yarnpkg/json-proxy", "workspace:packages/yarnpkg-json-proxy"],
             ["@yarnpkg/parsers", "workspace:packages/yarnpkg-parsers"],
             ["clipanion", "npm:2.4.0"],
-            ["inquirer", "npm:6.2.1"],
+            ["inquirer", "patch:inquirer@npm%3A7.1.0#./.yarn/patches/inquirer.patch::version=7.1.0&hash=75c2f9&locator=%40yarnpkg%2Fmonorepo%40workspace%3A."],
             ["lodash", "npm:4.17.15"],
             ["semver", "npm:7.1.2"],
             ["treeify", "npm:1.1.0"],
@@ -8909,7 +8909,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/semver", "npm:7.1.0"],
             ["@yarnpkg/core", "workspace:packages/yarnpkg-core"],
             ["@yarnpkg/fslib", "workspace:packages/yarnpkg-fslib"],
-            ["inquirer", "npm:6.2.1"],
+            ["inquirer", "patch:inquirer@npm%3A7.1.0#./.yarn/patches/inquirer.patch::version=7.1.0&hash=75c2f9&locator=%40yarnpkg%2Fmonorepo%40workspace%3A."],
             ["semver", "npm:7.1.2"],
             ["tslib", "npm:1.13.0"]
           ],
@@ -8926,7 +8926,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/semver", "npm:7.1.0"],
             ["@yarnpkg/core", "workspace:packages/yarnpkg-core"],
             ["@yarnpkg/fslib", "workspace:packages/yarnpkg-fslib"],
-            ["inquirer", "npm:6.2.1"],
+            ["inquirer", "patch:inquirer@npm%3A7.1.0#./.yarn/patches/inquirer.patch::version=7.1.0&hash=75c2f9&locator=%40yarnpkg%2Fmonorepo%40workspace%3A."],
             ["semver", "npm:7.1.2"],
             ["tslib", "npm:1.13.0"]
           ],
@@ -8949,7 +8949,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@yarnpkg/plugin-npm", "virtual:cd2af72718007566941ac9f5a6def4d055c38029c95c3ac065493603e6055c1d77b2f2df752588114932973488b5a566f49b00118e7e12f48aa0798ea38cc15b#workspace:packages/plugin-npm"],
             ["@yarnpkg/plugin-pack", "virtual:4864d30fc563f2fd1b72a5e3869493c5f50bf38f98ed3886173d80c044d981c3f68220dbf17f2b5fc5b4c5fba7d0af2e003926efe3487086484049f41c449852#workspace:packages/plugin-pack"],
             ["clipanion", "npm:2.4.0"],
-            ["inquirer", "npm:6.2.1"],
+            ["inquirer", "patch:inquirer@npm%3A7.1.0#./.yarn/patches/inquirer.patch::version=7.1.0&hash=75c2f9&locator=%40yarnpkg%2Fmonorepo%40workspace%3A."],
             ["semver", "npm:7.1.2"],
             ["ssri", "npm:6.0.1"],
             ["tslib", "npm:1.13.0"],
@@ -8978,7 +8978,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@yarnpkg/plugin-npm", "virtual:cd2af72718007566941ac9f5a6def4d055c38029c95c3ac065493603e6055c1d77b2f2df752588114932973488b5a566f49b00118e7e12f48aa0798ea38cc15b#workspace:packages/plugin-npm"],
             ["@yarnpkg/plugin-pack", "virtual:cd2af72718007566941ac9f5a6def4d055c38029c95c3ac065493603e6055c1d77b2f2df752588114932973488b5a566f49b00118e7e12f48aa0798ea38cc15b#workspace:packages/plugin-pack"],
             ["clipanion", "npm:2.4.0"],
-            ["inquirer", "npm:6.2.1"],
+            ["inquirer", "patch:inquirer@npm%3A7.1.0#./.yarn/patches/inquirer.patch::version=7.1.0&hash=75c2f9&locator=%40yarnpkg%2Fmonorepo%40workspace%3A."],
             ["semver", "npm:7.1.2"],
             ["ssri", "npm:6.0.1"],
             ["tslib", "npm:1.13.0"],
@@ -9007,7 +9007,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@yarnpkg/plugin-npm", "virtual:cd2af72718007566941ac9f5a6def4d055c38029c95c3ac065493603e6055c1d77b2f2df752588114932973488b5a566f49b00118e7e12f48aa0798ea38cc15b#workspace:packages/plugin-npm"],
             ["@yarnpkg/plugin-pack", "virtual:cd2af72718007566941ac9f5a6def4d055c38029c95c3ac065493603e6055c1d77b2f2df752588114932973488b5a566f49b00118e7e12f48aa0798ea38cc15b#workspace:packages/plugin-pack"],
             ["clipanion", "npm:2.4.0"],
-            ["inquirer", "npm:6.2.1"],
+            ["inquirer", "patch:inquirer@npm%3A7.1.0#./.yarn/patches/inquirer.patch::version=7.1.0&hash=75c2f9&locator=%40yarnpkg%2Fmonorepo%40workspace%3A."],
             ["semver", "npm:7.1.2"],
             ["ssri", "npm:6.0.1"],
             ["tslib", "npm:1.13.0"],
@@ -12262,13 +12262,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["chardet", [
-        ["npm:0.4.2", {
-          "packageLocation": "./.yarn/cache/chardet-npm-0.4.2-05471c97f2-456c69168f.zip/node_modules/chardet/",
-          "packageDependencies": [
-            ["chardet", "npm:0.4.2"]
-          ],
-          "linkType": "HARD",
-        }],
         ["npm:0.7.0", {
           "packageLocation": "./.yarn/cache/chardet-npm-0.7.0-27933dd6c7-b71a4ee464.zip/node_modules/chardet/",
           "packageDependencies": [
@@ -15275,7 +15268,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["ignore", "npm:4.0.6"],
             ["import-fresh", "npm:3.0.0"],
             ["imurmurhash", "npm:0.1.4"],
-            ["inquirer", "npm:7.1.0"],
+            ["inquirer", "patch:inquirer@npm%3A7.1.0#./.yarn/patches/inquirer.patch::version=7.1.0&hash=75c2f9&locator=%40yarnpkg%2Fmonorepo%40workspace%3A."],
             ["is-glob", "npm:4.0.0"],
             ["js-yaml", "npm:3.13.1"],
             ["json-stable-stringify-without-jsonify", "npm:1.0.1"],
@@ -16043,16 +16036,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["external-editor", [
-        ["npm:2.2.0", {
-          "packageLocation": "./.yarn/cache/external-editor-npm-2.2.0-5470f4a42d-0d2ef9aac5.zip/node_modules/external-editor/",
-          "packageDependencies": [
-            ["external-editor", "npm:2.2.0"],
-            ["chardet", "npm:0.4.2"],
-            ["iconv-lite", "npm:0.4.24"],
-            ["tmp", "npm:0.0.33"]
-          ],
-          "linkType": "HARD",
-        }],
         ["npm:3.0.3", {
           "packageLocation": "./.yarn/cache/external-editor-npm-3.0.3-8458f31845-67e1662a6d.zip/node_modules/external-editor/",
           "packageDependencies": [
@@ -19934,71 +19917,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["inquirer", [
-        ["npm:3.3.0", {
-          "packageLocation": "./.yarn/cache/inquirer-npm-3.3.0-492dcdcfed-34e59b7bb9.zip/node_modules/inquirer/",
+        ["patch:inquirer@npm%3A7.1.0#./.yarn/patches/inquirer.patch::version=7.1.0&hash=75c2f9&locator=%40yarnpkg%2Fmonorepo%40workspace%3A.", {
+          "packageLocation": "./.yarn/cache/inquirer-patch-0e1a6fa7bd-59f20c3469.zip/node_modules/inquirer/",
           "packageDependencies": [
-            ["inquirer", "npm:3.3.0"],
-            ["ansi-escapes", "npm:3.1.0"],
-            ["chalk", "npm:2.4.2"],
-            ["cli-cursor", "npm:2.1.0"],
-            ["cli-width", "npm:2.2.0"],
-            ["external-editor", "npm:2.2.0"],
-            ["figures", "npm:2.0.0"],
-            ["lodash", "npm:4.17.15"],
-            ["mute-stream", "npm:0.0.7"],
-            ["run-async", "npm:2.3.0"],
-            ["rx-lite", "npm:4.0.8"],
-            ["rx-lite-aggregates", "npm:4.0.8"],
-            ["string-width", "npm:2.1.1"],
-            ["strip-ansi", "npm:4.0.0"],
-            ["through", "npm:2.3.8"]
-          ],
-          "linkType": "HARD",
-        }],
-        ["npm:6.2.1", {
-          "packageLocation": "./.yarn/cache/inquirer-npm-6.2.1-67a548e7da-b5102d7aa2.zip/node_modules/inquirer/",
-          "packageDependencies": [
-            ["inquirer", "npm:6.2.1"],
-            ["ansi-escapes", "npm:3.1.0"],
-            ["chalk", "npm:2.4.2"],
-            ["cli-cursor", "npm:2.1.0"],
-            ["cli-width", "npm:2.2.0"],
-            ["external-editor", "npm:3.0.3"],
-            ["figures", "npm:2.0.0"],
-            ["lodash", "npm:4.17.15"],
-            ["mute-stream", "npm:0.0.7"],
-            ["run-async", "npm:2.3.0"],
-            ["rxjs", "npm:6.3.3"],
-            ["string-width", "npm:2.1.1"],
-            ["strip-ansi", "npm:5.0.0"],
-            ["through", "npm:2.3.8"]
-          ],
-          "linkType": "HARD",
-        }],
-        ["npm:6.5.0", {
-          "packageLocation": "./.yarn/cache/inquirer-npm-6.5.0-60501c9560-d0c1b73c32.zip/node_modules/inquirer/",
-          "packageDependencies": [
-            ["inquirer", "npm:6.5.0"],
-            ["ansi-escapes", "npm:3.2.0"],
-            ["chalk", "npm:2.4.2"],
-            ["cli-cursor", "npm:2.1.0"],
-            ["cli-width", "npm:2.2.0"],
-            ["external-editor", "npm:3.0.3"],
-            ["figures", "npm:2.0.0"],
-            ["lodash", "npm:4.17.15"],
-            ["mute-stream", "npm:0.0.7"],
-            ["run-async", "npm:2.3.0"],
-            ["rxjs", "npm:6.5.4"],
-            ["string-width", "npm:2.1.1"],
-            ["strip-ansi", "npm:5.2.0"],
-            ["through", "npm:2.3.8"]
-          ],
-          "linkType": "HARD",
-        }],
-        ["npm:7.1.0", {
-          "packageLocation": "./.yarn/cache/inquirer-npm-7.1.0-b82227f199-651838e841.zip/node_modules/inquirer/",
-          "packageDependencies": [
-            ["inquirer", "npm:7.1.0"],
+            ["inquirer", "patch:inquirer@npm%3A7.1.0#./.yarn/patches/inquirer.patch::version=7.1.0&hash=75c2f9&locator=%40yarnpkg%2Fmonorepo%40workspace%3A."],
             ["ansi-escapes", "npm:4.3.1"],
             ["chalk", "npm:3.0.0"],
             ["cli-cursor", "npm:3.1.0"],
@@ -27757,7 +27679,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["filesize", "npm:3.5.11"],
             ["global-modules", "npm:1.0.0"],
             ["gzip-size", "npm:3.0.0"],
-            ["inquirer", "npm:3.3.0"],
+            ["inquirer", "patch:inquirer@npm%3A7.1.0#./.yarn/patches/inquirer.patch::version=7.1.0&hash=75c2f9&locator=%40yarnpkg%2Fmonorepo%40workspace%3A."],
             ["is-root", "npm:1.0.0"],
             ["opn", "npm:5.1.0"],
             ["react-error-overlay", "npm:3.0.0"],
@@ -27787,7 +27709,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["globby", "npm:8.0.2"],
             ["gzip-size", "npm:5.1.1"],
             ["immer", "npm:1.10.0"],
-            ["inquirer", "npm:6.5.0"],
+            ["inquirer", "patch:inquirer@npm%3A7.1.0#./.yarn/patches/inquirer.patch::version=7.1.0&hash=75c2f9&locator=%40yarnpkg%2Fmonorepo%40workspace%3A."],
             ["is-root", "npm:2.1.0"],
             ["loader-utils", "npm:1.2.3"],
             ["open", "npm:6.4.0"],
@@ -29316,14 +29238,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["run-async", [
-        ["npm:2.3.0", {
-          "packageLocation": "./.yarn/cache/run-async-npm-2.3.0-20b785ec02-a488425557.zip/node_modules/run-async/",
-          "packageDependencies": [
-            ["run-async", "npm:2.3.0"],
-            ["is-promise", "npm:2.1.0"]
-          ],
-          "linkType": "HARD",
-        }],
         ["npm:2.4.0", {
           "packageLocation": "./.yarn/cache/run-async-npm-2.4.0-a25f8f76f9-1d806e363e.zip/node_modules/run-async/",
           "packageDependencies": [
@@ -29352,34 +29266,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
-      ["rx-lite", [
-        ["npm:4.0.8", {
-          "packageLocation": "./.yarn/cache/rx-lite-npm-4.0.8-38d4b9a39a-8244e10964.zip/node_modules/rx-lite/",
-          "packageDependencies": [
-            ["rx-lite", "npm:4.0.8"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
-      ["rx-lite-aggregates", [
-        ["npm:4.0.8", {
-          "packageLocation": "./.yarn/cache/rx-lite-aggregates-npm-4.0.8-df1fa68b4e-cfb1158158.zip/node_modules/rx-lite-aggregates/",
-          "packageDependencies": [
-            ["rx-lite-aggregates", "npm:4.0.8"],
-            ["rx-lite", "npm:4.0.8"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
       ["rxjs", [
-        ["npm:6.3.3", {
-          "packageLocation": "./.yarn/cache/rxjs-npm-6.3.3-5635372014-d0d7d576a0.zip/node_modules/rxjs/",
-          "packageDependencies": [
-            ["rxjs", "npm:6.3.3"],
-            ["tslib", "npm:1.13.0"]
-          ],
-          "linkType": "HARD",
-        }],
         ["npm:6.5.4", {
           "packageLocation": "./.yarn/cache/rxjs-npm-6.5.4-8c1301c00a-8e2b3c1c5c.zip/node_modules/rxjs/",
           "packageDependencies": [
@@ -34688,7 +34575,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["debug", "virtual:600237cf09a10d2aee41c3b67d3b1a1f8e4ee4d3398af108896e8123f43754f0ac9f704dcda78606de8699a7aca253e14c9d0933cdf05abe7bb399fdfb1d0dfa#npm:4.1.1"],
             ["deep-equal", "npm:1.1.1"],
             ["detect-indent", "npm:6.0.0"],
-            ["inquirer", "npm:7.1.0"],
+            ["inquirer", "patch:inquirer@npm%3A7.1.0#./.yarn/patches/inquirer.patch::version=7.1.0&hash=75c2f9&locator=%40yarnpkg%2Fmonorepo%40workspace%3A."],
             ["invariant", "npm:2.2.4"],
             ["is-builtin-module", "npm:3.0.0"],
             ["is-ci", "npm:2.0.0"],
