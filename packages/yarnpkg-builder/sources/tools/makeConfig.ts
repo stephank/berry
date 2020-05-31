@@ -27,21 +27,16 @@ export const makeConfig = (config: webpack.Configuration) => merge({
     rules: [{
       test: /\.tsx?$/,
       exclude: /\.d\.ts$/,
-      use: [{
-        loader: require.resolve(`babel-loader`),
-        options: {
-          plugins: [
-            [require.resolve(`@babel/plugin-syntax-decorators`), {legacy: true}],
-            [require.resolve(`@babel/plugin-syntax-class-properties`), {loose: true}],
-            require.resolve(`babel-plugin-lazy-import`),
-          ],
-        },
-      }, {
+      use: {
         loader: require.resolve(`ts-loader`),
         options: {
-          compilerOptions: {declaration: false},
+          compilerOptions: {
+            declaration: false,
+            module: `ESNext`,
+            moduleResolution: `node`,
+          },
         },
-      }],
+      },
     }],
   },
 
