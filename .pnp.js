@@ -40326,6 +40326,10 @@ class VirtualFS_VirtualFS extends ProxiedFS_ProxiedFS {
     return p;
   }
 
+  watch(p, a, b) {
+    return this.baseFs.watch(VirtualFS_VirtualFS.resolveVirtual(p), a, b);
+  }
+
 }
 // EXTERNAL MODULE: external "stream"
 var external_stream_ = __webpack_require__(6);

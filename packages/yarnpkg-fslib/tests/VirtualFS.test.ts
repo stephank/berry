@@ -148,4 +148,25 @@ describe(`VirtualFS`, () => {
     const virtualFs = new VirtualFS();
     expect(virtualFs.realpathSync(virtualEntry)).toEqual(virtualEntry);
   });
+
+  it(`should be able to watch virtual path`, async () => {
+    const virtualEntry = ppath.join(npath.toPortablePath(__dirname), `$$virtual/12345/0/watch-file.txt` as Filename);
+
+    const virtualFs = new VirtualFS();
+    virtualFs.writeFileSync(virtualEntry, new Date().toJSON());
+
+    const watchCallback = jest.fn(() => 42);
+    const watcher = virtualFs.watch(virtualEntry, watchCallback);
+
+    try {
+      virtualFs.appendFileSync(virtualEntry, new Date().toJSON());
+
+      await new Promise(r => setTimeout(r, 2000));
+
+      expect(watchCallback).toBeCalled();
+    } finally {
+      watcher.close();
+      virtualFs.removeSync(virtualEntry);
+    }
+  });
 });

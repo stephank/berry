@@ -1,7 +1,7 @@
-import {FakeFS, ExtractHintOptions}    from './FakeFS';
-import {NodeFS}                        from './NodeFS';
-import {ProxiedFS}                     from './ProxiedFS';
-import {Filename, PortablePath, ppath} from './path';
+import {FakeFS, ExtractHintOptions, WatchCallback, Watcher, WatchOptions} from './FakeFS';
+import {NodeFS}                                                           from './NodeFS';
+import {ProxiedFS}                                                        from './ProxiedFS';
+import {Filename, PortablePath, ppath}                                    from './path';
 
 const NUMBER_REGEXP = /^[0-9]+$/;
 
@@ -109,5 +109,11 @@ export class VirtualFS extends ProxiedFS<PortablePath, PortablePath> {
 
   mapFromBase(p: PortablePath) {
     return p;
+  }
+
+  watch(p: PortablePath, cb?: WatchCallback): Watcher;
+  watch(p: PortablePath, opts: WatchOptions, cb?: WatchCallback): Watcher;
+  watch(p: PortablePath, a?: WatchOptions | WatchCallback, b?: WatchCallback) {
+    return this.baseFs.watch(VirtualFS.resolveVirtual(p), a as any, b);
   }
 }
