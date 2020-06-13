@@ -1,7 +1,5 @@
-import {npath, ppath, xfs}   from '@yarnpkg/fslib';
-import JSONStream            from 'JSONStream';
-import {execFileSync, spawn} from 'child_process';
-import {StringDecoder}       from 'string_decoder';
+import {npath, ppath, xfs} from '@yarnpkg/fslib';
+import {spawn}             from 'child_process';
 
 describe(`Features`, () => {
   describe(`Editor SDK`, () => {
@@ -123,6 +121,7 @@ describe(`Features`, () => {
         try {
           // We get the path to something that's definitely in a zip archive
           const lodashTypeDef = require.resolve(`@types/lodash/index.d.ts`).replace(/\\/g, `/`);
+          const lodashTypeDefFsPath = `zip:${lodashTypeDef[0] !== `/` ? `/` : ``}${lodashTypeDef}`;
 
           // We'll also use this file (which we control, so its content won't
           // change) to get autocompletion infos. It depends on lodash too.
@@ -137,12 +136,12 @@ describe(`Features`, () => {
             seq: 0,
             type: `request`,
             command: `open`,
-            arguments: {file: `zip:${lodashTypeDef}`},
+            arguments: {file: lodashTypeDefFsPath},
           })}\n`);
 
           await openPromise;
 
-          const typeDefPromise = expect(watchFor(`zip:${lodashTypeDef}`)).resolves.toEqual(true);
+          const typeDefPromise = expect(watchFor(lodashTypeDefFsPath)).resolves.toEqual(true);
 
           child.stdin.write(`${JSON.stringify({
             seq: 1,
